@@ -1,0 +1,9 @@
+header {
+  grid-area: h;
+  background-color: mediumaquamarine;
+  /* height: 50px; */
+}
+
+header img {
+  width: 25px;
+}
