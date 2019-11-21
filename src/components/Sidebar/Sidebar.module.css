@@ -1,0 +1,10 @@
+.sideBar {
+  grid-area: s;
+  background-color: thistle;
+  padding: 10px;
+}
+
+.active {
+  text-decoration: none;
+  color: white;
+}
