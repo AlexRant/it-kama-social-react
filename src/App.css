@@ -34,6 +34,11 @@
 
 }
 
+.app-wrapper-content {
+  grid-area: c;
+  background-color: lightblue;
+}
+
 /* header {
   grid-area: h;
   background-color: mediumaquamarine;

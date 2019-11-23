@@ -4,7 +4,13 @@
   padding: 10px;
 }
 
-.active {
+a {
   text-decoration: none;
-  color: white;
+  
+}
+
+.activeLink {
+  padding-top: 10px;
+  margin: 10px;
+  color: lightseagreen;
 }

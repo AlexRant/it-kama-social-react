@@ -1,0 +1,25 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.dialoger {
+  color: rgb(62, 99, 146);
+  font-size: 20px;
+  
+}
+
+.dialoger {
+  padding-top: 5px;
+  padding-left: 5px;
+  border-left: 2px solid rgb(62, 99, 146);
+  border-bottom: 1px solid rgb(62, 99, 146);
+  margin-left: 3px;
+}
+
+.messages div {
+  color: rgb(62, 99, 146);
+  font-size: 20px;
+  padding-top: 5px;
+  margin-left: 10px;
+}

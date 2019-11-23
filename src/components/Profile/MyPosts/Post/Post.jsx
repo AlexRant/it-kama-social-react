@@ -4,7 +4,7 @@ import s from './Post.module.css';
 const Post = (props) => {
   return (
   <div className={s.item}>
-    <img src='https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700' />
+    <img src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spider-man-far-from-home-peter-parker-1562394390.jpg?crop=0.455xw:0.862xh;0.282xw,0.0296xh&resize=480:*' alt='ava' />
       { props.postMessage }
     <div>
       <span>likes: {props.likeCount}</span>
