@@ -1,0 +1,8 @@
+.content {
+  grid-area: c;
+  background-color: rgba(4, 161, 252, 0.938);
+}
+
+.avaDescription {
+  padding: 20px;
+}

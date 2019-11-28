@@ -1,16 +1,13 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css';
+import ProfileHeader from './ProfileHeader/ProfileHeader';
 
-const Profile = () => {
+const Profile = (props) => {
   return <div className={s.content}>
-              <img src="https://cdn.pixabay.com/photo/2018/05/28/22/11/message-in-a-bottle-3437294__340.jpg" alt="letter in the bottle" />
+              <ProfileHeader />
 
-              <div>
-                ava + description
-              </div>
-
-              <MyPosts />
+              <MyPosts posts={props.posts} />
 
           </div>
 }
