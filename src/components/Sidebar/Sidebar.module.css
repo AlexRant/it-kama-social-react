@@ -14,3 +14,22 @@ a {
   margin: 10px;
   color: lightseagreen;
 }
+
+.friendsWrapper {
+  display: flex;
+  width: 250px;
+  height: 150px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid coral;
+  color: blue;
+  margin-top: 10px;
+}
+
+.friendsWrapper img {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

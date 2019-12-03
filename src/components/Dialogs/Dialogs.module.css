@@ -6,15 +6,17 @@
 .dialoger {
   color: rgb(62, 99, 146);
   font-size: 20px;
-  
-}
-
-.dialoger {
   padding-top: 5px;
   padding-left: 5px;
   border-left: 2px solid rgb(62, 99, 146);
   border-bottom: 1px solid rgb(62, 99, 146);
   margin-left: 3px;
+}
+
+.dialoger img {
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
 }
 
 .messages div {

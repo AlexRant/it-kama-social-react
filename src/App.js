@@ -12,30 +12,21 @@ import { Route, BrowserRouter } from 'react-router-dom';
 
 function App(props) {
 
-  // let speakers = [
-  //   {id: 1, name: "Alex", message: "What's up guys?"},
-  //   {id: 2, name: "Kate", message: "Who are you?"},
-  //   {id: 3, name: "Phill", message: "I'm newby here."},
-  //   {id: 4, name: "Ben", message: "Will it be anything interesting here?"},
-  //   {id: 5, name: "Ann", message: "Hello everybody, let's start the party!"},
-  // ]
-
   return (
     <BrowserRouter>
     <div className="App wrapper">
       <Header />
 
       <Sidebar />
+      {/* <Sidebar name={props.state.messagePage.speakers} /> */}
 
-      {/* <Profile /> */}
       <div className="app-wrapper-content">
-        {/* <Route path="/profile" component={Profile} /> */}
-        {/* <Route path="/dialogs" component={Dialogs} /> */}
-        <Route path="/profile" render={() => <Profile posts={props.posts} /> }/>
-        <Route path="/dialogs" render={() => <Dialogs speakers={props.speakers} />}/>
-        <Route path="/news" component={News} />
-        <Route path="/music" component={Music} />
-        <Route path="/settings" component={Settings} />
+        <Route path="/profile" render={() => <Profile posts={props.state.profilePage.posts}
+                                                      addPost={props.addPost} /> }/>
+        <Route path="/dialogs" render={() => <Dialogs speakers={props.state.messagePage.speakers} />}/>
+        <Route path="/news" render={ () => <News /> } />
+        <Route path="/music" render={ () => <Music /> } />
+        <Route path="/settings" render={ () => <Settings />} />
       </div>
     </div>
     </BrowserRouter>

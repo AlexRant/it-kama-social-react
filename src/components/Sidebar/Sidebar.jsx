@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Sidebar.module.css';
 import {NavLink} from 'react-router-dom';
+import Friends from './Friends';
 
 const Sidebar = () => {
-  return <nav className={styles.sideBar}>
+  return (
+    <div>
+        <nav className={styles.sideBar}>
             <div className={styles.active}>
               <NavLink to="./profile" activeClassName={styles.activeLink}>Profile</NavLink>
             </div>
@@ -19,7 +22,10 @@ const Sidebar = () => {
             <div>
               <NavLink to="./settings" activeClassName={styles.activeLink}>Settings</NavLink>
             </div>
-          </nav>
+        </nav>
+        <Friends />
+    </div>
+          )
 }
 
 export default Sidebar;
