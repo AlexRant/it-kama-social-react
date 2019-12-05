@@ -22,7 +22,10 @@ function App(props) {
 
       <div className="app-wrapper-content">
         <Route path="/profile" render={() => <Profile posts={props.state.profilePage.posts}
-                                                      addPost={props.addPost} /> }/>
+                                                      addPost={props.addPost}
+                                                      newPostText={props.state.profilePage.newPostText}
+                                                      postTextUpdate={props.postTextUpdate}
+                                                       /> }/>
         <Route path="/dialogs" render={() => <Dialogs speakers={props.state.messagePage.speakers} />}/>
         <Route path="/news" render={ () => <News /> } />
         <Route path="/music" render={ () => <Music /> } />

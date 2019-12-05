@@ -1,14 +1,15 @@
 import {reRenderTree} from '../render';
 
 let state = {
-  profilePage: {posts: 
-    [
-      {id: 1, message: "It's my first post :)", likesCount: 105},
-      {id: 2, message: "Hello, where I am?", likesCount: 20},
-      {id: 3, message: "Some dummy text to fill the post", likesCount: 5},
-      {id: 4, message: "Checking the process!", likesCount: 28},
-    ]
-  },
+  profilePage: {
+    posts: [
+        {id: 1, message: "It's my first post :)", likesCount: 105},
+        {id: 2, message: "Hello, where I am?", likesCount: 20},
+        {id: 3, message: "Some dummy text to fill the post", likesCount: 5},
+        {id: 4, message: "Checking the process!", likesCount: 28},
+          ],
+    newPostText: 'Hey-hey, I am new text here!'
+    },
   messagePage:{
     speakers: 
     [
@@ -21,6 +22,8 @@ let state = {
   }
 }
 
+window.state = state;
+
 export const addPost = (postText) => {
   
   let newPost = {
@@ -32,5 +35,14 @@ export const addPost = (postText) => {
 
   reRenderTree(state);
 }
+
+export const postTextUpdate = (enteredText) => {
+  
+  state.profilePage.newPostText = enteredText;
+  // console.log(state);
+
+  reRenderTree(state);
+}
+
 
 export default state;

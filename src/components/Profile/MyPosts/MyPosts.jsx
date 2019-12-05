@@ -10,14 +10,19 @@ const MyPosts = (props) => {
   
   const showAddedPost = () => {
     let postText = newPostItem.current.value;
-    // alert(postText);
     props.addPost(postText);
-    newPostItem.current.value = '';
+    props.postTextUpdate('');
+    // newPostItem.current.value = '';
+  }
+
+  const onTextareachange = () => {
+    let letters = newPostItem.current.value;
+    props.postTextUpdate(letters);
   }
 
   return (
   <div className={s.content}>
-    <textarea ref={newPostItem}></textarea>
+    <textarea ref={newPostItem} value={props.newPostText} onChange={onTextareachange}  />
     <br/>
     <button onClick={showAddedPost}>Add</button>
 
